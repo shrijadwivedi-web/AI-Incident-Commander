@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aic-shared"
+version = "0.1.0"
+description = "Shared libraries for AI Incident Commander"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.9",
+  "pydantic-settings>=2.6",
+  "confluent-kafka>=2.6",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["common*", "config*", "messaging*"]

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LogEvent",
+  "type": "object",
+  "required": [
+    "log_id",
+    "service_name",
+    "timestamp",
+    "level",
+    "message",
+    "masked_message"
+  ],
+  "properties": {
+    "log_id": { "type": "string", "format": "uuid" },
+    "service_name": { "type": "string" },
+    "incident_id": { "type": ["string", "null"] },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "level": { "type": "string" },
+    "message": { "type": "string" },
+    "masked_message": { "type": "string" },
+    "metadata": { "type": "object" }
+  }
+}
