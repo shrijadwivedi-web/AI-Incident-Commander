@@ -10,6 +10,7 @@ class Settings(BaseSettings):
     kafka_alerts_topic: str = "alerts-topic"
     kafka_logs_topic: str = "logs-topic"
     kafka_client_id: str = "aic-ingestion"
+    database_url: str = "postgresql://incident_commander:incident_commander@localhost:5432/incident_commander"
 
 
 @lru_cache

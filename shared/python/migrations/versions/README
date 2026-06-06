@@ -1,0 +1,7 @@
+# Migration versions directory
+#
+# Each file in this directory represents one Alembic revision.
+# Files are named: <revision_id>_<slug>.py
+#
+# Do NOT edit these files manually after they have been applied to any
+# environment.  Always create a new revision instead.
