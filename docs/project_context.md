@@ -18,9 +18,9 @@ An AI-powered SRE platform that ingests logs, metrics, and traces, detects incid
 - **Kubernetes**
 
 ## Architecture style
-- **Microservices**
-- **Event-driven**
-- **Clean Architecture**
+- **Modular Monolith** (`incident-commander-core` runtime)
+- **Isolated Microservice** (`action-runner-service` runtime)
+- **Event-driven & Clean Architecture**
 
 ## What this repository is
 **AI Incident Commander** is an autonomous SRE co-pilot that helps on-call engineers and incident commanders reduce MTTR by ingesting alerts, correlating telemetry, proposing root-cause hypotheses, and guiding safe, human-in-the-loop actions.
